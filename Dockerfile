@@ -13,7 +13,7 @@ RUN apt-get install -y apt-transport-https --force-yes &&\
     apt-get update &&\
     apt-get install nzbdrone -y && \
     adduser --system -shell "/bin/bash" --uid 1000 --disabled-password --group --home /var/lib/sonarr sonarr && \
-    groupadd --gid 1000 media && \
+    groupadd media && \
     usermod -a -G media sonarr && \
   apt-get -y autoremove && \
   apt-get -y clean && \
