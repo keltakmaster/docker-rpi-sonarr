@@ -25,7 +25,7 @@ RUN mkdir -p /logs && chown sonarr:sonarr /logs
 RUN mkdir -p /downloads && chown sonarr:media /downloads
 RUN mkdir -p /tv && chown sonarr:media /tv
 
-VOLUME ["/config", "/downloads", "/logs", "/tv"]
+VOLUME ["/config", "/downloads", "/logs", "/tv", "/opt/NzbDrone]
 
 USER sonarr
 
