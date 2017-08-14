@@ -1,5 +1,5 @@
 FROM armbuild/debian:jessie
-MAINTAINER ildeon
+MAINTAINER keltakmaster
 
 RUN echo "Package: *\nPin: release n=jessie\nPin-Priority: 998\n" > /etc/apt/preferences.d/sonarr
 
