@@ -12,13 +12,10 @@ RUN apt-get install -y apt-transport-https --force-yes &&\
     echo "deb https://apt.sonarr.tv/ master main" | tee -a /etc/apt/sources.list.d/sonarr.list &&\
     apt-get update &&\
     apt-get install nzbdrone -y && \
-    adduser --system -shell "/bin/bash" --uid 1000 --disabled-password --group --home /var/lib/sonarr sonarr && \
-    groupadd media && \
-    usermod -a -G media sonarr && \
-  apt-get -y autoremove && \
-  apt-get -y clean && \
-  rm -rf /var/lib/apt/lists/* && \
-  rm -rf /tmp/*
+    apt-get -y autoremove && \
+    apt-get -y clean && \
+    rm -rf /var/lib/apt/lists/* && \
+    rm -rf /tmp/*
 
 RUN mkdir -p /config && chown sonarr:sonarr /config
 RUN mkdir -p /logs && chown sonarr:sonarr /logs
