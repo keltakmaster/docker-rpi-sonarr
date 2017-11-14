@@ -1,8 +1,6 @@
 FROM armbuild/debian:jessie
 MAINTAINER keltakmaster
 
-RUN echo "Package: *\nPin: release n=jessie\nPin-Priority: 998\n" > /etc/apt/preferences.d/sonarr
-
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y libmono-cil-dev
