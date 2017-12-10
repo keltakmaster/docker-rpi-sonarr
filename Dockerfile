@@ -3,7 +3,6 @@ MAINTAINER keltakmaster
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y libmono-cil-dev
 
 RUN apt-get install -y apt-transport-https --force-yes &&\
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FDA5DFFC &&\
