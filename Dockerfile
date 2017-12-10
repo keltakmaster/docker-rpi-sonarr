@@ -1,4 +1,4 @@
-FROM armbuild/debian:jessie
+FROM kdautrey/rpi-mono
 MAINTAINER keltakmaster
 
 RUN apt-get update && \
