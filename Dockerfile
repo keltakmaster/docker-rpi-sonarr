@@ -2,7 +2,7 @@ FROM kdautrey/rpi-mono
 MAINTAINER keltakmaster
 
 RUN apt-get update && \
-    apt-get upgrade -y && \
+    apt-get upgrade -y
 
 RUN apt-get install -y apt-transport-https --force-yes &&\
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FDA5DFFC &&\
